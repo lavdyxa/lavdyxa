@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lavdyxa — sakura profile</title>
+  <meta name="description" content="lavdyxa — Telegram & Discord profile">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petals" aria-hidden="true"></div>
+
+  <main class="page">
+    <section class="profile-card">
+      <div class="glow"></div>
+
+      <div class="mini-badge">✿ online</div>
+
+      <div class="avatar">
+        <div class="avatar-ring"></div>
+        <div class="avatar-face">
+          <span class="hair hair-1"></span>
+          <span class="hair hair-2"></span>
+          <span class="eye left"></span>
+          <span class="eye right"></span>
+          <span class="mouth">⌣</span>
+          <span class="blush left"></span>
+          <span class="blush right"></span>
+        </div>
+      </div>
+
+      <p class="eyebrow">welcome to my little world</p>
+      <h1>lavdyxa</h1>
+      <p class="subtitle">sakura dreams · anime vibes · pink nights</p>
+
+      <div class="divider"><span>✿</span></div>
+
+      <div class="links">
+        <!-- Замени YOUR_TELEGRAM на свой username -->
+        <a class="social telegram" href="https://t.me/lavdyxa" target="_blank" rel="noopener">
+          <span class="icon">✈</span>
+          <span><b>Telegram</b><small>@YOUR_TELEGRAM</small></span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <!-- Замени YOUR_DISCORD_ID на свой Discord user ID -->
+        <a class="social discord" href="https://discord.com/users/929826348816560148" target="_blank" rel="noopener">
+          <span class="icon">◌</span>
+          <span><b>Discord</b><small>open my profile</small></span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+
+      <div class="quote">
+        <span>“</span>
+        stay soft, stay cute, stay yourself
+        <span>”</span>
+      </div>
+
+      <footer>made with ♡ by <strong>lavdyxa</strong></footer>
+    </section>
+
+    <div class="sakura-decoration left">✿</div>
+    <div class="sakura-decoration right">✿</div>
+  </main>
+
+  <script>
+    const container = document.querySelector('.petals');
+    for (let i = 0; i < 26; i++) {
+      const p = document.createElement('span');
+      p.className = 'petal';
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.animationDuration = (6 + Math.random() * 8) + 's';
+      p.style.animationDelay = (-Math.random() * 12) + 's';
+      p.style.transform = `scale(${0.55 + Math.random() * 0.75}) rotate(${Math.random()*180}deg)`;
+      container.appendChild(p);
+    }
+  </script>
+</body>
+</html>
