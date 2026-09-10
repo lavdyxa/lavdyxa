@@ -37,17 +37,19 @@
       <div class="divider"><span>✿</span></div>
 
       <div class="links">
+
         <a class="social telegram" href="https://t.me/lavdyxa" target="_blank" rel="noopener">
           <span class="icon">✈</span>
-          <span><b>Telegram</b><small>@lavdyxa</small></span>
+          <span><b>Telegram</b><small>Telegram</small></span>
           <span class="arrow">↗</span>
         </a>
 
         <a class="social discord" href="https://discord.com/users/929826348816560148" target="_blank" rel="noopener">
           <span class="icon">◌</span>
-          <span><b>Discord</b><small>my Discord</small></span>
+          <span><b>Discord</b><small>Discord</small></span>
           <span class="arrow">↗</span>
         </a>
+
       </div>
 
       <div class="quote">
@@ -65,13 +67,17 @@
 
   <script>
     const container = document.querySelector('.petals');
+
     for (let i = 0; i < 26; i++) {
       const p = document.createElement('span');
+
       p.className = 'petal';
       p.style.left = Math.random() * 100 + 'vw';
       p.style.animationDuration = (6 + Math.random() * 8) + 's';
       p.style.animationDelay = (-Math.random() * 12) + 's';
-      p.style.transform = `scale(${0.55 + Math.random() * 0.75}) rotate(${Math.random()*180}deg)`;
+      p.style.transform =
+        `scale(${0.55 + Math.random() * 0.75}) rotate(${Math.random() * 180}deg)`;
+
       container.appendChild(p);
     }
   </script>
