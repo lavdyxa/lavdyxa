@@ -1,197 +1,1153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lavdyxa — little corner of the internet</title>
-  <meta name="description" content="lavdyxa's personal anime-inspired corner of the internet.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>lavdyxa ♡</title>
+
+    <meta name="description" content="Личный уголок lavdyxa — проекты, аниме, музыка, галерея и немного моего мира.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="petals" aria-hidden="true"></div>
 
-  <header class="topbar">
-    <a class="brand" href="#home" data-page="home">lavdyxa<span>✦</span></a>
-    <div class="top-actions">
-      <button class="icon-btn" id="themeToggle" title="Toggle night mode">☾</button>
-      <button class="menu-btn" id="menuBtn">☰</button>
-    </div>
-  </header>
+<!-- =========================
+     BACKGROUND
+========================= -->
 
-  <aside class="sidebar" id="sidebar">
-    <div class="side-title">навигация</div>
-    <nav>
-      <a href="#home" data-page="home">🌸 <span>Главная</span></a>
-      <a href="#about" data-page="about">👤 <span>Обо мне</span></a>
-      <a href="#projects" data-page="projects">💻 <span>Проекты</span></a>
-      <a href="#anime" data-page="anime">🌸 <span>Аниме</span></a>
-      <a href="#music" data-page="music">🎵 <span>Музыка</span></a>
-      <a href="#gallery" data-page="gallery">🖼️ <span>Галерея</span></a>
-      <a href="#socials" data-page="socials">📱 <span>Соцсети</span></a>
-      <a href="#blog" data-page="blog">📝 <span>Блог</span></a>
+<div class="background"></div>
+<div class="petals"></div>
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="header">
+
+    <a href="#home" class="logo">
+        🌸 <span>lavdyxa</span>
+    </a>
+
+    <nav class="nav">
+
+        <a href="#home">🌸 Главная</a>
+        <a href="#about">👤 Обо мне</a>
+        <a href="#projects">💻 Проекты</a>
+        <a href="#anime">🌸 Аниме</a>
+        <a href="#music">🎵 Музыка</a>
+        <a href="#gallery">🖼️ Галерея</a>
+        <a href="#socials">📱 Соцсети</a>
+        <a href="#blog">📝 Блог</a>
+
     </nav>
-    <div class="side-footer">made with ♡ by lavdyxa</div>
-  </aside>
 
-  <main>
-    <section class="page active" id="home">
-      <div class="hero-card glass">
-        <div class="glow"></div>
-        <div class="hero-art">
-          <div class="avatar-ring">
-            <div class="avatar">🌸</div>
-          </div>
-          <div class="floating-star s1">✦</div>
-          <div class="floating-star s2">✧</div>
+    <button class="menu-button" onclick="toggleMenu()">
+        ☰
+    </button>
+
+</header>
+
+<!-- =========================
+     MOBILE MENU
+========================= -->
+
+<div id="mobileMenu" class="mobile-menu">
+
+    <a href="#home" onclick="closeMenu()">🌸 Главная</a>
+    <a href="#about" onclick="closeMenu()">👤 Обо мне</a>
+    <a href="#projects" onclick="closeMenu()">💻 Проекты</a>
+    <a href="#anime" onclick="closeMenu()">🌸 Аниме</a>
+    <a href="#music" onclick="closeMenu()">🎵 Музыка</a>
+    <a href="#gallery" onclick="closeMenu()">🖼️ Галерея</a>
+    <a href="#socials" onclick="closeMenu()">📱 Соцсети</a>
+    <a href="#blog" onclick="closeMenu()">📝 Блог</a>
+
+</div>
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section id="home" class="hero section">
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            ♡ добро пожаловать
         </div>
-        <div class="hero-copy">
-          <p class="eyebrow">♡ добро пожаловать в мой маленький мир</p>
-          <h1>lavdyxa</h1>
-          <p class="subtitle">кодирование · музыка · аниме · мой маленький мир</p>
-          <p class="intro">🌸 Небольшое место в интернете, где я собираю свои проекты, любимые вещи, музыку и то, чем хочу поделиться.</p>
-          <div class="hero-buttons">
-            <a href="#about" class="primary-btn" data-page="about">✨ заглянуть в мой мир →</a>
-            <a href="#socials" class="ghost-btn" data-page="socials">♡ мои соцсети</a>
-          </div>
+
+        <h1>
+            Привет, я
+            <span>lavdyxa</span> 🌸
+        </h1>
+
+        <p class="hero-text">
+            Небольшое место в интернете, где я собираю свои проекты,
+            любимые вещи, музыку и то, чем хочу поделиться.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#about" class="button primary">
+                ✨ заглянуть в мой мир →
+            </a>
+
+            <a href="#socials" class="button secondary">
+                ♡ мои соцсети
+            </a>
+
         </div>
-      </div>
 
-      <div class="mini-grid">
-        <div class="mini-card glass"><span>♡</span><b>Счастье</b><small>то, что делает меня счастливым в одиночестве</small></div>
-        <div class="mini-card glass"><span>⌨</span><b>Кодирование</b><small>создаю то, что приходит в голову</small></div>
-        <div class="mini-card glass"><span>🌸</span><b>Аниме</b><small>истории, которые мне нравятся</small></div>
-        <div class="mini-card glass"><span>♫</span><b>Музыка</b><small>то, что всегда со мной</small></div>
-      </div>
-    </section>
-
-    <section class="page" id="about">
-      <div class="section-head"><p class="eyebrow">♡ немного обо мне</p><h2>Обо мне</h2></div>
-      <div class="content-grid">
-        <article class="glass info-card large">
-          <span class="big-icon">🌸</span>
-          <h3>🌸 Привет, я lavdyxa</h3>
-          <p>♡ Это мой личный уголок в интернете. Здесь я собираю то, что мне нравится, и просто создаю то, что хочется.</p>
-          <p>✦ Этот сайт сделан немного необычным специально для меня — можешь заглянуть в разные разделы и, возможно, найти что-нибудь скрытое.</p>
-        </article>
-        <article class="glass stats-card">
-          <h3>✦ немного обо мне</h3>
-          <div class="stat"><span>🎮 Игры</span><i><b style="width:96%"></b></i></div>
-          <div class="stat"><span>⌨ Кодирование</span><i><b style="width:82%"></b></i></div>
-          <div class="stat"><span>🌸 Аниме</span><i><b style="width:94%"></b></i></div>
-          <div class="stat"><span>☾ Сон</span><i><b style="width:24%"></b></i></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="page" id="projects">
-      <div class="section-head"><p class="eyebrow">✦ то, что я создаю</p><h2>Проекты</h2></div>
-      <div class="cards">
-        <article class="project-card glass">
-          <div class="project-icon">🌐</div><div><h3>🌸 lavdyxa</h3><p>Мой личный сайт в аниме-стиле — место, которое я постепенно создаю под себя.</p><span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">JS</span></div>
-        </article>
-        <article class="project-card glass">
-          <div class="project-icon">🤖</div><div><h3>💬 Discord-сервер</h3><p>Моё небольшое сообщество для общения, игр и новых знакомств.</p><span class="tag">Discord</span> <span class="tag">Community</span></div>
-        </article>
-        <article class="project-card glass">
-          <div class="project-icon">💻</div><div><h3>✨ Ещё впереди...</h3><p>Здесь со временем будут появляться новые эксперименты и маленькие проекты.</p><span class="tag">WIP</span></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="page" id="anime">
-      <div class="section-head"><p class="eyebrow">аниме, которые мне нравятся</p><h2>Anime</h2></div>
-      <div class="anime-grid">
-        <article class="anime-card glass">
-          <div class="anime-cover anime-image frieren-img" aria-label="Визуал аниме Фрирен"></div>
-          <h3>Фрирен</h3>
-          <p>Одно из моих любимых аниме.</p>
-          <div class="stars">★★★★★</div>
-        </article>
-        <article class="anime-card glass">
-          <div class="anime-cover anime-image darling-img" aria-label="Визуал аниме Милый во Франксе"></div>
-          <h3>Милый во Франксе</h3>
-          <p>Тоже одно из моих любимых аниме.</p>
-          <div class="stars">★★★★★</div>
-        </article>
-        <article class="anime-card glass">
-          <div class="anime-cover more">?</div>
-          <h3>Следующее аниме</h3>
-          <p>Может быть, здесь скоро появится ещё одно.</p>
-          <div class="stars">☆☆☆☆☆</div>
-        </article>
-      </div>
-    </section>
-
-    <section class="page" id="music">
-      <div class="section-head"><p class="eyebrow">моя любимая музыка</p><h2>Музыка</h2></div>
-      <div class="music-player glass">
-        <div class="vinyl" id="vinyl">♫</div>
-        <div class="track">
-          <small>МОЯ ЛЮБИМАЯ ПЕСНЯ</small>
-          <h3>Максим — Знаешь ли ты</h3>
-          <p>Нажми ▶, чтобы включить песню ♡</p>
-          <div class="progress"><span id="musicProgress"></span></div>
-          <div class="controls">
-            <button type="button" aria-label="Назад" id="restartMusic">↶</button>
-            <button type="button" class="play" id="playMusic" aria-label="Включить музыку">▶</button>
-            <button type="button" aria-label="Остановить" id="stopMusic">■</button>
-          </div>
-          <audio id="favoriteSong" preload="metadata"><source src="music.mp3" type="audio/mpeg"></audio>
+        <div class="hero-subtitle">
+            кодирование · музыка · аниме · мой маленький мир
         </div>
-      </div>
-      <div class="music-note glass">Здесь я буду собирать музыку, которая мне нравится.</div>
-    </section>
 
-    <section class="page" id="gallery">
-      <div class="section-head"><p class="eyebrow">мои любимые картинки</p><h2>Галерея</h2></div>
-      <div class="gallery-grid">
-        <article class="gallery-card glass">
-          <img src="gallery-zero-two.jpg" alt="Аниме-аватарка">
-          <p>♡ Эта аватарка досталась мне от бывшего интересного собеседника.</p>
-        </article>
-        <article class="gallery-card glass">
-          <img src="gallery-linie.jpg" alt="Линия">
-          <p>✦ Один из персонажей, которые мне понравились — Линия.</p>
-        </article>
-        <article class="gallery-card glass">
-          <img src="gallery-sensa.jpg" alt="Зенса">
-          <p>✧ Это персонаж Зенса. Он мне тоже понравился, но не так, как Линия и Ферн.</p>
-        </article>
-        <article class="gallery-card glass">
-          <img src="gallery-fern.jpg" alt="Ферн">
-          <p>🌸 А это мой любимый персонаж из аниме «Фрирен» — её зовут Ферн.</p>
-        </article>
-      </div>
-    </section>
+    </div>
 
-    <section class="page" id="socials">
-      <div class="section-head"><p class="eyebrow">где меня найти</p><h2>Socials</h2></div>
-      <div class="social-grid">
-        <a class="social-card glass telegram" href="https://t.me/lavdyxa" target="_blank">
-          <span class="social-icon">✈</span><div><h3>Telegram</h3><p>lavdyxa</p></div><b>↗</b>
-        </a>
-        <a class="social-card glass discord" href="https://discord.com/users/929826348816560148" target="_blank">
-          <span class="social-icon">◉</span><div><h3>Discord</h3><p>lavdyxa</p></div><b>↗</b>
-        </a>
-        <a class="social-card glass discord-server" href="https://discord.gg/e6wKqxrqD" target="_blank">
-          <span class="social-icon">⌂</span><div><h3>Discord Server</h3><p>sakura🌸</p></div><b>↗</b>
-        </a>
-        <a class="social-card glass tiktok" href="https://www.tiktok.com/@lavdyxa" target="_blank">
-          <span class="social-icon">♪</span><div><h3>TikTok</h3><p>lavdyxa</p></div><b>↗</b>
-        </a>
-      </div>
-    </section>
+</section>
 
-    <section class="page" id="blog">
-      <div class="section-head"><p class="eyebrow">♡ небольшие обновления</p><h2>Блог</h2></div>
-      <div class="posts">
-        <article class="post glass"><time>20.09.2026</time><h3>🌸 Добро пожаловать в новый lavdyxa</h3><p>Сайт постепенно становится чем-то большим, чем просто профиль — это мой маленький уголок в интернете.</p></article>
-        <article class="post glass"><time>soon</time><h3>✦ Новый проект уже скоро...</h3><p>Когда что-нибудь новое будет готово, я обязательно добавлю это сюда.</p></article>
-      </div>
-    </section>
-  </main>
+<!-- =========================
+     HOME CARDS
+========================= -->
 
-  <footer>© 2026 lavdyxa · made with 🌸</footer>
-  <script src="script.js"></script>
+<section class="mini-cards">
+
+    <div class="mini-card">
+
+        <div class="mini-icon">
+            ♡
+        </div>
+
+        <h3>
+            Счастье
+        </h3>
+
+        <p>
+            то, что делает меня счастливым в одиночестве
+        </p>
+
+    </div>
+
+
+    <div class="mini-card">
+
+        <div class="mini-icon">
+            ⌨
+        </div>
+
+        <h3>
+            Кодирование
+        </h3>
+
+        <p>
+            создаю то, что приходит в голову
+        </p>
+
+    </div>
+
+
+    <div class="mini-card">
+
+        <div class="mini-icon">
+            🌸
+        </div>
+
+        <h3>
+            Аниме
+        </h3>
+
+        <p>
+            истории, которые мне нравятся
+        </p>
+
+    </div>
+
+
+    <div class="mini-card">
+
+        <div class="mini-icon">
+            ♫
+        </div>
+
+        <h3>
+            Музыка
+        </h3>
+
+        <p>
+            то, что всегда со мной
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            ♡ немного обо мне
+        </div>
+
+        <h2>
+            Обо мне
+        </h2>
+
+    </div>
+
+
+    <div class="about-grid">
+
+        <div class="about-card">
+
+            <div class="about-icon">
+                🌸
+            </div>
+
+            <h3>
+                Привет, я lavdyxa
+            </h3>
+
+            <p>
+                ♡ Это мой личный уголок в интернете.
+                Здесь я собираю то, что мне нравится,
+                и просто создаю то, что хочется.
+            </p>
+
+            <p>
+                ✦ Этот сайт сделан немного необычным специально для меня —
+                можешь заглянуть в разные разделы и,
+                возможно, найти что-нибудь скрытое.
+            </p>
+
+        </div>
+
+
+        <div class="about-stats">
+
+            <h3>
+                ✦ немного обо мне
+            </h3>
+
+            <div class="stat">
+
+                <span>
+                    🎮 Игры
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+            <div class="stat">
+
+                <span>
+                    ⌨ Кодирование
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+            <div class="stat">
+
+                <span>
+                    🌸 Аниме
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+            <div class="stat">
+
+                <span>
+                    ☾ Сон
+                </span>
+
+                <span>
+                    ♡
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PROJECTS
+========================= -->
+
+<section id="projects" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            ✦ то, что я создаю
+        </div>
+
+        <h2>
+            Проекты
+        </h2>
+
+    </div>
+
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                🌸
+            </div>
+
+            <h3>
+                lavdyxa
+            </h3>
+
+            <p>
+                Мой личный сайт в аниме-стиле —
+                место, которое я постепенно создаю под себя.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                💬
+            </div>
+
+            <h3>
+                Discord-сервер
+            </h3>
+
+            <p>
+                Моё небольшое сообщество для общения,
+                игр и новых знакомств.
+            </p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <div class="project-icon">
+                ✨
+            </div>
+
+            <h3>
+                Ещё впереди...
+            </h3>
+
+            <p>
+                Здесь со временем будут появляться
+                новые эксперименты и маленькие проекты.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ANIME
+========================= -->
+
+<section id="anime" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            🌸 то, что мне нравится
+        </div>
+
+        <h2>
+            Аниме
+        </h2>
+
+    </div>
+
+
+    <div class="anime-grid">
+
+        <!-- FRIEREN -->
+
+        <div class="anime-card">
+
+            <div class="anime-image frieren-image">
+
+                <img
+                    src="gallery-fern.jpg"
+                    alt="Ферн из аниме Фрирен"
+                >
+
+            </div>
+
+            <div class="anime-info">
+
+                <h3>
+                    Фрирен
+                </h3>
+
+                <p>
+                    Frieren: Beyond Journey's End
+                </p>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DARLING IN THE FRANXX -->
+
+        <div class="anime-card">
+
+            <div class="anime-image">
+
+                <img
+                    src="https://spice.eplus.jp/images/o9KczgDl1m56dLy63cXa48zwYo5jL8EFnjZls0sBaVJ4ghHp93IkmDJOQxVGTtji"
+                    alt="Милый во Франксе"
+                >
+
+            </div>
+
+            <div class="anime-info">
+
+                <h3>
+                    Милый во Франксе
+                </h3>
+
+                <p>
+                    Darling in the FranXX
+                </p>
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- NEXT -->
+
+        <div class="anime-card empty-card">
+
+            <div class="empty-anime">
+
+                <div>
+                    ✨
+                </div>
+
+                <h3>
+                    Следующее аниме
+                </h3>
+
+                <p>
+                    Возможно, здесь скоро появится
+                    ещё одна история.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<section id="music" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            ♫ моя любимая музыка
+        </div>
+
+        <h2>
+            Музыка
+        </h2>
+
+    </div>
+
+
+    <div class="music-card">
+
+        <div class="vinyl-container">
+
+            <div class="vinyl" id="vinyl">
+
+                <div class="vinyl-center">
+                    ♡
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="music-info">
+
+            <div class="music-label">
+                ♡ любимая песня
+            </div>
+
+            <h3>
+                Максим — Знаешь ли ты
+            </h3>
+
+            <p>
+                Это моя любимая песня ♡
+            </p>
+
+
+            <!-- AUDIO -->
+
+            <audio id="musicPlayer" src="music.mp3"></audio>
+
+
+            <div class="music-controls">
+
+                <button
+                    class="music-button"
+                    onclick="playMusic()"
+                    id="playButton"
+                >
+                    ▶
+                </button>
+
+                <button
+                    class="music-button"
+                    onclick="pauseMusic()"
+                >
+                    ⏸
+                </button>
+
+                <button
+                    class="music-button"
+                    onclick="stopMusic()"
+                >
+                    ■
+                </button>
+
+            </div>
+
+
+            <div class="music-progress">
+
+                <div
+                    class="music-progress-bar"
+                    id="musicProgress"
+                ></div>
+
+            </div>
+
+
+            <div class="music-status" id="musicStatus">
+                Нажми ▶, чтобы включить
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <p class="music-note">
+        Здесь я буду собирать музыку, которая мне нравится.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     GALLERY
+========================= -->
+
+<section id="gallery" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            🖼️ немного визуала
+        </div>
+
+        <h2>
+            Галерея
+        </h2>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+
+        <div class="gallery-card">
+
+            <img
+                src="gallery-zero-two.jpg"
+                alt="Zero Two"
+            >
+
+            <div class="gallery-caption">
+
+                ♡ Эта аватарка досталась мне
+                от бывшего интересного собеседника.
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="gallery-linie.jpg"
+                alt="Линия"
+            >
+
+            <div class="gallery-caption">
+
+                ✦ Один из персонажей,
+                которые мне понравились — Линия.
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="gallery-sensa.jpg"
+                alt="Зенса"
+            >
+
+            <div class="gallery-caption">
+
+                ✧ Это персонаж Зенса.
+                Он мне тоже понравился,
+                но не так, как Линия и Ферн.
+
+            </div>
+
+        </div>
+
+
+        <div class="gallery-card">
+
+            <img
+                src="gallery-fern.jpg"
+                alt="Ферн"
+            >
+
+            <div class="gallery-caption">
+
+                🌸 А это мой любимый персонаж
+                из аниме «Фрирен» —
+                её зовут Ферн.
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SOCIALS
+========================= -->
+
+<section id="socials" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            📱 где меня найти
+        </div>
+
+        <h2>
+            Соцсети
+        </h2>
+
+    </div>
+
+
+    <div class="socials-grid">
+
+
+        <!-- TELEGRAM -->
+
+        <a
+            class="social-card"
+            href="https://t.me/YOUR_TELEGRAM"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                ✈
+            </div>
+
+            <div>
+
+                <h3>
+                    Telegram
+                </h3>
+
+                <p>
+                    lavdyxa
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- DISCORD -->
+
+        <a
+            class="social-card"
+            href="https://discord.com/users/YOUR_DISCORD_ID"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                💬
+            </div>
+
+            <div>
+
+                <h3>
+                    Discord
+                </h3>
+
+                <p>
+                    lavdyxa
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- DISCORD SERVER -->
+
+        <a
+            class="social-card"
+            href="YOUR_DISCORD_SERVER"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                🌸
+            </div>
+
+            <div>
+
+                <h3>
+                    Discord-сервер
+                </h3>
+
+                <p>
+                    sakura🌸
+                </p>
+
+            </div>
+
+        </a>
+
+
+        <!-- TIKTOK -->
+
+        <a
+            class="social-card"
+            href="https://www.tiktok.com/@YOUR_TIKTOK"
+            target="_blank"
+        >
+
+            <div class="social-icon">
+                ♪
+            </div>
+
+            <div>
+
+                <h3>
+                    TikTok
+                </h3>
+
+                <p>
+                    lavdyxa
+                </p>
+
+            </div>
+
+        </a>
+
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BLOG
+========================= -->
+
+<section id="blog" class="section">
+
+    <div class="section-title">
+
+        <div class="eyebrow">
+            ♡ небольшие обновления
+        </div>
+
+        <h2>
+            Блог
+        </h2>
+
+    </div>
+
+
+    <div class="blog-grid">
+
+
+        <article class="blog-card">
+
+            <div class="blog-date">
+                🌸 сейчас
+            </div>
+
+            <h3>
+                🌸 Добро пожаловать в новый lavdyxa
+            </h3>
+
+            <p>
+                Сайт постепенно становится чем-то большим,
+                чем просто профиль —
+                это мой маленький уголок в интернете.
+            </p>
+
+        </article>
+
+
+        <article class="blog-card">
+
+            <div class="blog-date">
+                ✦ скоро
+            </div>
+
+            <h3>
+                ✦ Новый проект уже скоро...
+            </h3>
+
+            <p>
+                Когда что-нибудь новое будет готово,
+                я обязательно добавлю это сюда.
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="footer-logo">
+        🌸 lavdyxa
+    </div>
+
+    <p>
+        сделано с ♡ и немного магии
+    </p>
+
+    <p class="footer-copy">
+        © 2026 lavdyxa
+    </p>
+
+</footer>
+
+
+<!-- =========================
+     SCRIPT
+========================= -->
+
+<script>
+
+    /* =====================
+       MOBILE MENU
+    ===================== */
+
+    function toggleMenu() {
+
+        const menu = document.getElementById("mobileMenu");
+
+        menu.classList.toggle("active");
+
+    }
+
+
+    function closeMenu() {
+
+        const menu = document.getElementById("mobileMenu");
+
+        menu.classList.remove("active");
+
+    }
+
+
+    /* =====================
+       MUSIC
+    ===================== */
+
+    const music = document.getElementById("musicPlayer");
+    const vinyl = document.getElementById("vinyl");
+    const progress = document.getElementById("musicProgress");
+    const status = document.getElementById("musicStatus");
+
+
+    function playMusic() {
+
+        music.play();
+
+        vinyl.classList.add("playing");
+
+        status.textContent = "♫ Сейчас играет — Максим — Знаешь ли ты";
+
+    }
+
+
+    function pauseMusic() {
+
+        music.pause();
+
+        vinyl.classList.remove("playing");
+
+        status.textContent = "⏸ Песня на паузе";
+
+    }
+
+
+    function stopMusic() {
+
+        music.pause();
+
+        music.currentTime = 0;
+
+        vinyl.classList.remove("playing");
+
+        progress.style.width = "0%";
+
+        status.textContent = "Нажми ▶, чтобы включить";
+
+    }
+
+
+    music.addEventListener("timeupdate", function() {
+
+        if (music.duration) {
+
+            const percent =
+                (music.currentTime / music.duration) * 100;
+
+            progress.style.width =
+                percent + "%";
+
+        }
+
+    });
+
+
+    music.addEventListener("ended", function() {
+
+        vinyl.classList.remove("playing");
+
+        progress.style.width = "0%";
+
+        status.textContent =
+            "♫ Песня закончилась";
+
+    });
+
+
+    /* =====================
+       SMOOTH HASH SCROLL
+    ===================== */
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+        link.addEventListener("click", function(event) {
+
+            const target =
+                document.querySelector(this.getAttribute("href"));
+
+            if (target) {
+
+                event.preventDefault();
+
+                target.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+                history.pushState(
+                    null,
+                    "",
+                    this.getAttribute("href")
+                );
+
+            }
+
+        });
+
+    });
+
+
+    /* =====================
+       SAKURA PETALS
+    ===================== */
+
+    const petalsContainer =
+        document.querySelector(".petals");
+
+
+    function createPetal() {
+
+        const petal =
+            document.createElement("div");
+
+        petal.classList.add("petal");
+
+        petal.innerHTML = "🌸";
+
+        petal.style.left =
+            Math.random() * 100 + "%";
+
+        petal.style.animationDuration =
+            (6 + Math.random() * 8) + "s";
+
+        petal.style.animationDelay =
+            Math.random() * 5 + "s";
+
+        petal.style.fontSize =
+            (10 + Math.random() * 12) + "px";
+
+        petalsContainer.appendChild(petal);
+
+
+        setTimeout(() => {
+
+            petal.remove();
+
+        }, 15000);
+
+    }
+
+
+    setInterval(createPetal, 900);
+
+
+    /* =====================
+       ACTIVE NAV
+    ===================== */
+
+    const sections =
+        document.querySelectorAll("section[id]");
+
+    const navLinks =
+        document.querySelectorAll(".nav a");
+
+
+    window.addEventListener("scroll", () => {
+
+        let current = "";
+
+        sections.forEach(section => {
+
+            const sectionTop =
+                section.offsetTop - 200;
+
+            if (
+                window.scrollY >= sectionTop
+            ) {
+
+                current =
+                    section.getAttribute("id");
+
+            }
+
+        });
+
+
+        navLinks.forEach(link => {
+
+            link.classList.remove("active");
+
+            if (
+                link.getAttribute("href") ===
+                "#" + current
+            ) {
+
+                link.classList.add("active");
+
+            }
+
+        });
+
+    });
+
+</script>
+
 </body>
 </html>
